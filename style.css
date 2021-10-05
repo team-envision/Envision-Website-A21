@@ -19,6 +19,10 @@ body {
     width: 90%;
     max-width: 1800px;
     margin: 0 auto;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
 }
 
 .whyUs .title {
@@ -28,7 +32,7 @@ body {
 }
 
 .whyUs .title h1 {
-    font-size: 4rem;
+    font-size: calc(1.6vw + 2.2rem);
     color: white;
     font-weight: 700;
     text-shadow:
@@ -39,12 +43,94 @@ body {
 }
 .whyUs .title .line {
     border-bottom: 1px solid var(--primary);
-    width: 20%;
+    width: 25%;
     margin:20px 5px 0 5px ;
 }
 .whyUs .title p{
-    width: 40%;
+    width: 30%;
     margin: 10px 10px;
+    line-height: 1.6;
     color: var(--primary);
     font-size: 1.1rem;
+}
+/* main Card */
+.whyUs-main{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto ;
+}
+.main-card{
+    display: flex;
+    width: 100%;
+    max-width:500px;
+    margin: 30px;
+    align-items:center;
+    justify-content:space-between;
+}
+.main-card .card-img{
+    width: 100%;
+    height: 90px;
+    max-width:90px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border-radius:50%;
+    background:var(--primary);
+    margin-right:20px ;
+    transition: all 0.4s ease-in-out;
+}
+.main-card .card-img img{
+    max-width:80px;
+}
+.main-card .card-content p{
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.main-card .card-content h3{
+    font-size:1.5rem;
+    font-weight:700;
+    color: var(--primary);
+    margin-bottom:10px ;
+}
+.main-card .card-img:hover{
+    background: var(--primary-light);
+}
+
+
+@media only screen and (max-width: 900px) {
+    html{
+        font-size: 12px;
+    }
+    .whyUs .title h1{
+        font-size: 4rem;
+    }
+    .whyUs .title{
+        flex-direction: column;
+    }
+    .whyUs .title p{
+        width: 100%;
+        text-align: center;
+    }
+    .whyUs .title .line{
+        display: none;
+    }
+    .whyUs-main{
+        grid-template-columns: auto ;
+        align-items:center;
+        justify-content:center;
+    }
+    .main-card .card-img{
+        width: 70px;
+        height: 70px;
+    }
+    .main-card .card-img img{
+        width: 50px;
+    }
+    .main-card .card-content p{
+        width: 90%;
+    }
 }
