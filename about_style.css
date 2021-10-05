@@ -1,36 +1,36 @@
-.container{
+.about_container{
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
     z-index:-2;
 }
-.container{
+.about_container{
     display:grid;
     grid-template-columns:auto;
 }
-.bg{
+.about_bg{
     z-index: -2;
     display: flex;
     flex-direction: row;
     justify-content:end;
 }
-.main{
+.about_main{
     z-index: 2;
     top: 0;
     grid-column-start: 1;
 }
-.heading{
+.about_heading{
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
     align-content: center;
     justify-content: center;
 }
-h2,h4{
+.ab_h2,.ab_h4{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
 }
-h2{
+.ab_h2{
     z-index: 0;
     color: #f2f2f2;
             font-size: 50px;
@@ -40,59 +40,59 @@ h2{
     padding-top: 27px;
     margin-left: 50px;
 }
-h4{
+.ab_h4{
     z-index: 1;
     padding-top: 42px;
     color: #f36e25;
     margin-left: 50px;
     font-size:32px
 }
-h6{
+.ab_h6{
     padding-top: 40px;
     color: #f6862c;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
 }
-.line{
+.about_line{
     padding-top: 110px;
     margin-right:10px;
     width: 40vw;
 }
-.top_left{
+.about_top_left{
     width: 500px;
     /* position: absolute; */
     margin-top: 50px;
 }
-.content{
+.about_content{
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
 }
-.brain{
+.about_brain{
     width: 420px;
     padding-top: 25px;
 }
-.text{
+.about_text{
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
 }
-.ring{
+.about_ring{
     position: absolute;
     top: 80px;
     right: 0px;
     z-index:0;
 }
 @media only screen and (max-width: 900px) {
-    .line{
+    .about_line{
         display: none;
     }
-    .heading{
+    .about_heading{
         display:grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    h2,h4{
+    .ab_h2,.ab_h4{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -100,53 +100,53 @@ h6{
         margin-left: 10px;
         margin-top: 0px;
     }
-    h6{
+    .ab_h6{
         grid-row-start: 2;
         grid-row-end: 3;
         text-align: center;
     }
-    .top_left{
+    .about_top_left{
         width: 500px;
     }
-    h2{
+    .ab_h2{
         font-size: 60px;
     }
-    h4{
+    .ab_h4{
         font-size: 36px;
         margin-left: 20px;
         padding-top: 35px;
     }
-    h6{
+    .ab_h6{
         font-size: 18px;
         text-align: center;
         padding-bottom: 0px;
         padding-top: 0px;
         margin-top: 5px;
     }
-    .content{
+    .about_content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center
     }
-    .text{
+    .about_text{
         text-align: center;
         padding: 0 50px 0 50px;
         line-height: 6vh;
         font-size:24px;
         /* font-weight: bold; */
     }
-    p br{
+    .text br{
         display: none;
     }
-    .brain{
+    .about_brain{
         /* width: 400px; */
         padding: 0;
         width: 400px; 
         height: 400px; 
         object-fit: cover;
     }
-    .ring{
+    .about_ring{
         display: block;
         position: absolute;
         right: 0px;
