@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
+
+#divisions {}
+
+.divisions-header {
+    text-transform: capitalize;
+}
+
+.divisions-title {
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: #F36C25;
+}
+
+.divisions-bg {
+    -webkit-text-stroke-width: 1px;
+    font-size: 72px;
+    line-height: 72px;
+    -webkit-text-stroke-color: black;
+    opacity: 0.15;
+    font-weight: 500px;
+    color: transparent;
+}
+
+.divisions-subtitle {}
