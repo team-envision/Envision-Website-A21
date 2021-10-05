@@ -1,9 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+
+:root {
+    --primary: #F36C25;
+    --primary-light: #FBA928;
+}
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.whyUs {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.whyUs .title {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.whyUs .title h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    text-shadow:
+        -1px -1px 0 rgb(206, 204, 204),
+        1px -1px 0 rgb(206, 204, 204),
+        -1px 1px 0 rgb(206, 204, 204),
+        1px 1px 0 rgb(206, 204, 204);
+}
+.whyUs .title .line {
+    border-bottom: 1px solid var(--primary);
+    width: 20%;
+    margin:20px 5px 0 5px ;
+}
+.whyUs .title p{
+    width: 40%;
+    margin: 10px 10px;
+    color: var(--primary);
+    font-size: 1.1rem;
 }
