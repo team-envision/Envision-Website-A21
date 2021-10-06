@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --primary: #F36C25;
@@ -163,7 +163,7 @@ body {
         right: 0px;
     }
 }
-
+/* Why Choose us */
 .whyUs {
     width: 90%;
     max-width: 1800px;
@@ -178,8 +178,16 @@ body {
     display: flex;
     justify-content:space-between;
     align-items:flex-start;
+    position: relative;
 }
-
+.whyUs .title .sub-title{
+    position: absolute;
+    top: 12%;
+    left: -2%;
+    color: var(--primary);
+    font-size:2rem ;
+    font-weight: 700;
+}
 .whyUs .title h1 {
     font-size: calc(1.6vw + 2.2rem);
     color: white;
@@ -239,6 +247,9 @@ body {
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
+.main-card .card-content{
+    width: 80%;
+}
 .main-card .card-content h3{
     font-size:1.5rem;
     font-weight:700;
@@ -255,10 +266,13 @@ body {
         font-size: 12px;
     }
     .whyUs .title h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .whyUs .title{
         flex-direction: column;
+    }
+    .whyUs .title .sub-title{
+        font-size:1.7rem;
     }
     .whyUs .title p{
         width: 100%;
@@ -281,5 +295,8 @@ body {
     }
     .main-card .card-content p{
         width: 90%;
+    }
+    .main-card .card-content h3{
+        font-size: 1.5rem;
     }
 }
