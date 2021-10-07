@@ -164,6 +164,12 @@ body {
     }
 }
 /* Why Choose us */
+.whyUs_bg{
+    z-index: -2;
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
 .whyUs {
     width: 90%;
     max-width: 1800px;
@@ -260,6 +266,58 @@ body {
     background: var(--primary-light);
 }
 
+.fp_bg{
+    z-index: -2;
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+.fp {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.fp .title {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    position: relative;
+}
+.fp .title .sub-title{
+    position: absolute;
+    top: 12%;
+    left: -2%;
+    color: var(--primary);
+    font-size:2rem ;
+    font-weight: 700;
+}
+.fp .title h1 {
+    font-size: calc(1.6vw + 2.2rem);
+    color: white;
+    font-weight: 700;
+    text-shadow:
+        -1px -1px 0 rgb(206, 204, 204),
+        1px -1px 0 rgb(206, 204, 204),
+        -1px 1px 0 rgb(206, 204, 204),
+        1px 1px 0 rgb(206, 204, 204);
+}
+.fp .title .line {
+    border-bottom: 1px solid var(--primary);
+    width: 25%;
+    margin:20px 5px 0 5px ;
+}
+.fp .title p{
+    width: 30%;
+    margin: 10px 10px;
+    line-height: 1.6;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
 
 @media only screen and (max-width: 900px) {
     html{
@@ -299,4 +357,59 @@ body {
     .main-card .card-content h3{
         font-size: 1.5rem;
     }
+}
+.imagesGrid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    justify-items: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.childImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+.imagesGrid .childImage{
+        cursor: pointer;
+
+}
+
+@media only screen and (max-width: 900px) {
+    html{
+        font-size: 12px;
+    }
+    .fp .title h1{
+        font-size: 3.5rem;
+    }
+    .fp .title{
+        flex-direction: column;
+    }
+    .fp .title .sub-title{
+        font-size:1.7rem;
+    }
+    .fp .title p{
+        width: 100%;
+        text-align: center;
+    }
+    .fp .title .line{
+        display: none;
+    }
+.imagesGrid{
+    grid-template-columns: auto ;
+    align-items:center;
+    justify-content:center;
+}
+.imagesGrid .childImage{
+    width: 70px;
+    height: 70px;
+}
+.imagesGrid .childImage img{
+    width: 50px;
+}
 }
