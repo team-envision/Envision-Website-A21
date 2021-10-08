@@ -1,6 +1,5 @@
-<<<<<<< HEAD @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-=======@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
->>>>>>>42630acae07c1421696f8eae0a110a506de460bf:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
     --primary: #F36C25;
     --primary-light: #FBA928;
 }
