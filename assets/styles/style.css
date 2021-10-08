@@ -1013,3 +1013,252 @@ font-family: 'Roboto', sans-serif;
         border-radius: 100%;
     }
 }
+
+
+
+
+
+/* About */
+
+nav {
+    height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+  }
+  
+  .container {
+    padding: 2% 5%;
+  }
+  
+  .container3 {
+    padding: 2% 0%;
+  }
+  
+  .intro {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    float: left;
+  }
+  .toggle {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+  }
+  
+  .container1 {
+    padding: 10% 0%;
+  }
+  
+  .intro-logo2 {
+    position: absolute;
+    top: 30vh;
+    right: 18vh;
+  }
+  
+  .envision {
+    font-size: 8.5rem;
+    letter-spacing: 20px;
+    font-family: sans-serif;
+    font-weight: 550;
+  }
+  
+  .team {
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 75vh;
+    left: 10vh;
+  }
+  
+  .bg-envision {
+    position: absolute;
+    left: 0vh;
+    top: 33vh;
+    overflow-x: hidden;
+    width:100vw;
+    /* font-family: Montserrat; */
+    font-size: 39vh;
+    line-height: 270px;
+    letter-spacing: 0.085em;
+  
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+  
+    opacity: 0.3;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .abouttext {
+    color: #f36c25;
+    font-weight: bolder;
+    font-size: 36px;
+  }
+  
+  .bg-aboutus {
+    position: absolute;
+    left: 14vh;
+    top: 110vh;
+    font-weight: 900;
+    /* font-family: Montserrat; */
+    font-size: 72px;
+    line-height: 270px;
+    letter-spacing: 0.085em;
+  
+    -webkit-text-stroke: 0.01px black;
+    -webkit-text-fill-color: transparent;
+  
+    opacity: 0.3;
+  }
+  
+  .line {
+    width: 31vw;
+    border-bottom: 2px solid #f36c25;
+    position: absolute;
+    left: 33vw;
+    top: 128vh;
+  }
+  
+  .intro-logo {
+    position: absolute;
+    top: 10vh;
+    right: 7vh;
+  }
+  .container2 {
+    display: flex;
+    margin-top: 5vh;
+  }
+  .text {
+    color: #f36c25;
+    font-size: 2.5vh;
+    position: absolute;
+    right: 10vh;
+    top: 126.5vh;
+  }
+  
+  .about2 {
+    font-size: 24px;
+    display: flex;
+    padding: 5% 0%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .aboutimg {
+      height: 35vh;
+    }
+    .intro-logo2 {
+      height: 25vh;
+      top: 18vh;
+      right: 16vh;
+    }
+    .intro-logo {
+      height: 45vh;
+      top: 12vh;
+      right: 12vh;
+    }
+    .toggle {
+      display: block;
+      float: right;
+      padding-top: 2%;
+    }
+    nav ul {
+      display: none;
+    }
+    .team {
+      font-size: 0.5rem;
+      letter-spacing: 4px;
+      padding-left: 20%;
+    }
+  
+    .envision {
+      font-size: 2rem;
+      letter-spacing: 10px;
+    }
+    .intro {
+      display: flex;
+  
+      flex-direction: column-reverse;
+    }
+  
+    .bg-envision {
+      font-size: 4rem;
+      top: 49vh;
+      left: 3vh;
+      border: none;
+    }
+    .bg-aboutus {
+      font-size: 3rem;
+      left: 40px;
+      top: 83vh;
+    }
+    .design {
+      height: 5vh;
+      position: absolute;
+      top: 80vh;
+    }
+    .line {
+      display: none;
+    }
+    .container2 {
+      height: 20vh;
+    }
+    .text {
+      font-size: 1.6vh;
+      left: 12%;
+      top: 113vh;
+    }
+    .about2 {
+      display: block;
+      text-align: center;
+    }
+    .arrow {
+      left: 38vh;
+      top: 40vh;
+      height: 15vh;
+    }
+  }
+  
+  @media screen and (width: 360px) {
+    .bg-envision {
+      top: 46vh;
+      font-size: 4rem;
+    }
+    .team {
+      padding-left: 16%;
+    }
+    .bg-aboutus {
+      top: 81.5vh;
+      font-size: 2.7rem;
+    }
+  }
+  
