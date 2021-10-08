@@ -471,6 +471,10 @@ font-family: 'Roboto', sans-serif;
     max-width: 1800px;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    background-image: url('/assets/images/Group.png');
+    background-position: right bottom;
+    background-size: 350px;
+    background-repeat: no-repeat;
 }
 
 .divisions-header {
@@ -589,6 +593,7 @@ font-family: 'Roboto', sans-serif;
     }
     #divisions {
         margin-top: 35vh;
+        background-size: 100px;
     }
 }
 
@@ -604,6 +609,7 @@ font-family: 'Roboto', sans-serif;
     }
     #divisions {
         margin-top: 350px;
+        background-size: 180px;
     }
 }
 
