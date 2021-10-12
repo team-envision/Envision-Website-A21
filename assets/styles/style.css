@@ -372,8 +372,17 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 900px) {
+    .fp{
+        display: none;
+    }
+    .main-card{
+        margin: 0;
+    }
+    .colab-heading{
+        left:0;
+    }
     .whyUs .title h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
     .whyUs .title {
         flex-direction: column;
@@ -525,7 +534,7 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 0rem;
     flex: 50%;
 }
 
@@ -567,7 +576,7 @@ font-family: 'Roboto', sans-serif;
 
 @media (max-width:900px) {
     .divisions-bg {
-        font-size: calc(18px + 6.5vw);
+        font-size: calc(2px + 6.5vw);
         margin-left: 1rem;
         transform: translate(1vw, -6.5vh);
         opacity: 0.15;
@@ -587,7 +596,7 @@ font-family: 'Roboto', sans-serif;
         display: none;
     }
     #divisions {
-        margin-top: 35vh;
+        margin-top: 80vh;
         background-size: 100px;
     }
 }
@@ -686,14 +695,17 @@ font-family: 'Roboto', sans-serif;
 .colab-card {
     display: flex;
     height: 60vh;
-    width: 90%;
+    width: 100%;
+    padding: 0 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .c-card {
     border: 1px solid rgba(243, 108, 37, 1);
     width: 40%;
     height: 50%;
-    left: 81px;
+    /* left: 81px; */
     position: relative;
     border-radius: 10px;
     margin: 20px;
@@ -709,7 +721,7 @@ font-family: 'Roboto', sans-serif;
     font-size: 3.5rem!important;
     position: relative;
     left: 7%;
-    top: 0px;
+    top: 21px;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-weight: bolder;
@@ -761,19 +773,18 @@ font-family: 'Roboto', sans-serif;
     .colab-heading {
         margin-left: auto;
         font-size: 1.7rem!important;
+        left: 10px;
     }
     .head-outline {
         font-size: 2rem!important;
-        left: 20%;
+        left: 15px;
         top: 10px;
     }
     .line {
         display: none;
     }
     .colab-card {
-        margin-top: 100px;
-        width: 90%;
-        margin-left: -20px;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -1029,6 +1040,7 @@ nav {
     padding: 2% 5%;
 }
 
+
 .container3 {
     padding: 2% 0%;
     -webkit-user-select: none;
@@ -1046,6 +1058,8 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
+
 
 .logo {
     float: left;
@@ -1073,7 +1087,8 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a:hover, nav ul li a.active {}
+
+
 
 .container1 {
     padding: 10% 0%;
