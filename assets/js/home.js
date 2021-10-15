@@ -24,13 +24,12 @@ jQuery(document).ready(function () {
         if (isOnScreen(jQuery('.brief-divisions'))) {
             /* Pass element id/class you want to check */
             reached += 1;
+            // console.log(reached);
         }
     });
 });
 
-console.log(reached);
-
-if (reached == 1) {
+if (reached < 2) {
     $('.Count').each(function () {
         var $this = $(this);
         jQuery({
@@ -38,7 +37,7 @@ if (reached == 1) {
         }).animate({
             Counter: $this.text()
         }, {
-            duration: 1000,
+            duration: 2700,
             easing: 'swing',
             step: function () {
                 $this.text(Math.ceil(this.Counter));
