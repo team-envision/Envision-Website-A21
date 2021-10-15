@@ -17,32 +17,61 @@ function isOnScreen(elem) {
         (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
 }
 
-var reached = 0;
+var flag = true;
 
 jQuery(document).ready(function () {
     window.addEventListener('scroll', function (e) {
+        // console.log(flag);
         if (isOnScreen(jQuery('.brief-divisions'))) {
             /* Pass element id/class you want to check */
-            reached += 1;
-            // console.log(reached);
+            {
+                // console.log(flag);
+                if (flag) {
+                    // console.log(flag);
+                    $('.Count').each(function () {
+                        var $this = $(this);
+                        jQuery({
+                            Counter: 0
+                        }).animate({
+                            Counter: $this.text()
+                        }, {
+                            duration: 2700,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.ceil(this.Counter));
+                            }
+                        });
+                    });
+                    flag = false;
+                    // console.log(flag);
+                }
+
+
+            }
         }
     });
 });
 
-if (reached < 2) {
-    $('.Count').each(function () {
-        var $this = $(this);
-        jQuery({
-            Counter: 0
-        }).animate({
-            Counter: $this.text()
-        }, {
-            duration: 2700,
-            easing: 'swing',
-            step: function () {
-                $this.text(Math.ceil(this.Counter));
-            }
-        });
-    });
-    reached = false;
-}
+
+// $('.brief-divisions').hover(() => {
+//     if (flag) {
+
+//         $('.Count').each(function () {
+//             var $this = $(this);
+//             jQuery({
+//                 Counter: 0
+//             }).animate({
+//                 Counter: $this.text()
+//             }, {
+//                 duration: 2700,
+//                 easing: 'swing',
+//                 step: function () {
+//                     $this.text(Math.ceil(this.Counter));
+//                 }
+//             });
+//         });
+//         flag = false;
+//     }
+
+
+// });
