@@ -19,26 +19,18 @@ body {
   overflow-x: hidden;
 }
 
-/* width */
-
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 1px;
 }
 
-/* Track */
-
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
-
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
-
-/* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -838,8 +830,7 @@ body {
 }
 
 .c-card {
-  border: 1px solid rgba(243, 108, 37, 1);
-  box-shadow: 2px 5px 5px rgba(116, 42, 2, 0.493);
+  box-shadow: 2px 5px 5px rgba(143, 52, 3, 0.493);
   width: 30%;
   height: 53%;
   /* left: 81px; */
@@ -857,7 +848,7 @@ body {
 
 .c-card:hover {
   transform: scale(1.05);
-  box-shadow: 2px 5px 10px 4px rgba(116, 42, 2, 0.306);
+  box-shadow: 2px 5px 10px 4px rgba(148, 53, 2, 0.306);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -894,7 +885,7 @@ body {
 
 .colab-img {
   width: auto;
-  height: 23vh;
+  height: 22vh;
   margin-left: auto!important;
   margin-right: auto!important;
   margin-top: 10px;
@@ -1255,6 +1246,12 @@ nav ul li a {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 18px;
+  transition: 0.7s fade-in-out;
+}
+
+nav ul li a:hover {
+  color: #f36c25;
+  transition: 0.7s fade-in-out;
 }
 
 .container1 {
