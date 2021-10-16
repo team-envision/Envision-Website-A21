@@ -16,15 +16,32 @@ section {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f2f2;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 ::-moz-selection {
@@ -823,14 +840,15 @@ body::-webkit-scrollbar {
 .c-card {
   border: 1px solid rgba(243, 108, 37, 1);
   box-shadow: 2px 5px 5px rgba(116, 42, 2, 0.493);
-  width: 40%;
-  height: 50%;
+  width: 30%;
+  height: 53%;
   /* left: 81px; */
   position: relative;
   border-radius: 10px;
   margin: 20px;
   margin-left: 0px;
   margin-bottom: 0;
+  font-weight: bold;
   background: white;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -869,17 +887,19 @@ body::-webkit-scrollbar {
   background: white;
   height: 50vh;
   width: 100vw;
-  margin: -10px;
+  margin: 10px;
   position: relative;
-  top: 160px;
+  margin-top: 160px;
 }
 
 .colab-img {
-  width: 16vw;
+  width: auto;
   height: 23vh;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  margin-top: 10px;
   background: white;
   position: relative;
-  left: 10%;
 }
 
 .card-title {
@@ -891,6 +911,7 @@ body::-webkit-scrollbar {
 .card-body {
   width: 20vw;
   height: 20vh;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
@@ -925,6 +946,7 @@ body::-webkit-scrollbar {
   }
   .colab-img {
     width: 80%;
+    height: auto;
   }
 }
 
