@@ -13,24 +13,26 @@
 </head>
 
 <body>
+    <a id="home"></a>
     <div class="container">
         <div class="logo"><img src="./assets/images/introImg4.png" alt=""></div>
         <div class="toggle"> <i class="fas fa-bars"></i></div>
         <nav>
-
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#divisions">Divisions</a></li>
+                <li><a href="#division">Divisions</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="/team.html">Team</a></li>
-                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="#footer">Contact Us</a></li>
             </ul>
 
         </nav>
 
     </div>
+
     <div class="container3" id="main-container">
+        <a name="home"></a>
         <div class="big-envision-div">
             <div class="bg-envision">ENVISION</div>
         </div>
@@ -152,7 +154,9 @@
                 </div>
             </div>
         </div>
+
     </section>
+    <a id="division"></a>
     <section id="divisions" class="hidden">
         <div class="divisions-header">
             <div class="divisions-title">
@@ -294,7 +298,7 @@
 
     <!-- Featured Projects -->
 
-    <section class="featured-divisions hidden">
+    <section class="featured-divisions hidden" id="projects">
         <div class="divisions-header">
             <div class="divisions-title">
                 Featured Projects
@@ -394,7 +398,7 @@
         </div>
     </section>
     <section class="divyanshu">
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer_col">
                 <div class="envison_logo1">
                     <img src="./assets/images/footer/envision_2.png" alt="envision" style="height: 4em;">
@@ -471,5 +475,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="./assets/js/home.js"></script>
 <script src="./assets/js/scroll.js"></script>
+<script>
+    $('a').click(function (e) {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1000);
+    });
+</script>
 
 </html>
