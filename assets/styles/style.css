@@ -37,6 +37,19 @@ body::-webkit-scrollbar {
   background: #F36C25;
 }
 
+.choose-us-div {
+  max-width: 100vw;
+  margin-right: 10px;
+}
+
+.about {
+  transition: 1.2s ease-in-out;
+}
+
+.collab {
+  transition: 1.5s ease-in-out;
+}
+
 .about_container {
   display: grid;
   grid-template-columns: auto;
@@ -240,16 +253,19 @@ body::-webkit-scrollbar {
 
 .divisions {
   max-width: 100vw;
+  transition: 1.2s ease-in-out;
 }
 
 .brief-divisions {
   max-width: 100vw;
   margin-bottom: 5vh;
+  transition: 1.2s ease-in-out;
 }
 
 .featured-divisions {
   max-width: 100vw;
   margin-top: 10vh;
+  transition: 1.2s ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -468,7 +484,7 @@ body::-webkit-scrollbar {
     width: 90%;
   }
   .main-card .card-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -545,6 +561,7 @@ body::-webkit-scrollbar {
   background-position: right bottom;
   background-size: 20vw;
   background-repeat: no-repeat;
+  transition: 1.2s ease-in-out;
 }
 
 .division-container {
@@ -1757,4 +1774,12 @@ nav ul li a {
     transition: 0.1s ease-in-out;
     box-shadow: 2px 5px 5px rgba(116, 42, 2, 0.493);
   }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hiddenChild {
+  opacity: 0;
 }
