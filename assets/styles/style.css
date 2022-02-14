@@ -71,7 +71,6 @@ body {
   flex-direction: row;
   justify-content: end;
 }
-
 .about_main {
   z-index: 2;
   top: 0;
@@ -209,6 +208,9 @@ body {
     padding-top: 0px;
     margin-top: 5px;
   }
+.about_main .division-container{
+  align-items:center;
+}
   .about_content {
     display: flex;
     flex-direction: column;
