@@ -719,9 +719,20 @@ body {
     margin-left: 1rem;
     transform: translate(1vw, -6.5vh);
     opacity: 0.15;
+    max-width:300px;
   }
   .divisions-title {
     font-size: calc(10px + 5vw);
+    max-width:300px;
+  }
+  .about .divisions-subtitle{
+    margin-left:5%;
+  }
+  .division-container{
+    align-items: center;
+  }
+  .about_content{
+    max-width:90vw;
   }
   .divisions-subtitle .divisions-subtitle-2{
     display: none;
