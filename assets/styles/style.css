@@ -406,7 +406,7 @@ body {
 }
 
 .main-card .card-content {
-  width: 80%;
+  width: 70%;
 }
 
 .main-card .card-content h3 {
@@ -510,6 +510,7 @@ body {
     grid-template-columns: auto;
     align-items: center;
     justify-content: center;
+    width:95%;
   }
   .main-card .card-img {
     width: 70px;
@@ -519,7 +520,7 @@ body {
     width: 50px;
   }
   .main-card .card-content p {
-    width: 90%;
+    width: 80%;
   }
   .main-card .card-content h3 {
     font-size: 1.2rem;
