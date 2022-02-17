@@ -1817,41 +1817,21 @@ nav ul li a:hover {
 }
 
 .brief {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 50px;
-  justify-items: center;
-  margin-top: 25px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-@media only screen and (max-width: 900px) {
-  .brief {
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .brief {
-    width: 50vw;
-    height: auto;
-  }
-}
-
-.brief {
   background-image: url("../images/clouds.png");
   background-repeat: repeat-x;
   background-position: left;
   background-position-y: 0;
   background-size: 62.8%;
   margin-bottom: 5%;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
 }
 
 .brief-card {
+  width: 40%;
+  max-width:200px;
   border: 2px solid black;
-  width: 14rem;
-  height: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1861,22 +1841,29 @@ nav ul li a:hover {
   border: 2px solid rgba(243, 108, 37, 0.22);
   margin: 1em;
   transition: 0.1s ease-in-out;
+  padding:20px;
 }
 
 .brief-card div {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
   background-color: #f36c25;
-  width: 30%;
-  height: 22%;
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 50px;
+  width:50px;
+  padding:10px;
   transition: 0.3s ease-in-out;
+  margin-block: 10px;
 }
+
+
 .brief-card img {
-  width: 40%;
+  width: 100%;
+  max-width:70px;
+  min-width:40px;
 }
 
 .brief-card p {
@@ -1884,20 +1871,9 @@ nav ul li a:hover {
   color: #f36c25;
   font-size: 20px;
   margin: 0px;
+  text-align: center;
 }
 
-/* 
-.brief-card:hover{
-  background-color: #f36c25;
-}
-
-.brief-card:hover div{
-  background-color: #fff;
-  color:#f36c25;
-}
-.brief-card:hover p{
-  color: #fff;
-} */
 
 .brief-card:hover {
   transform: scale(1.05);
@@ -1913,21 +1889,15 @@ nav ul li a:hover {
     background-position: center;
     background-position-y: 0.5vw;
   }
-  .brief-card {
-    border: 2px solid black;
-    width: 14rem;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 25px;
-    background: #ffffff;
-    border: 2px solid rgba(243, 108, 37, 0.22);
-    margin: 1em;
-    transition: 0.1s ease-in-out;
-    box-shadow: 2px 5px 5px rgba(116, 42, 2, 0.493);
+  .brief-card p {
+    font-size: 15px;
   }
+  .brief-card div {
+    font-size:17px;
+  }
+  .brief-card {
+    width: 30%;
+    max-width:140px;
 }
 
 .hidden {
@@ -1948,7 +1918,4 @@ nav ul li a:hover {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-/* 
-.bg-aaruush {
-  background: url("./assets/images/colab/srmimg.png");
-} */
+}
