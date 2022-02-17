@@ -1896,8 +1896,8 @@ nav ul li a:hover {
     font-size:17px;
   }
   .brief-card {
-    width: 30%;
-    max-width:140px;
+    width: 40%;
+    max-width:150px;
 }
 
 .hidden {
