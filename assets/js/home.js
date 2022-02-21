@@ -78,3 +78,11 @@ jQuery(document).ready(function () {
 //     }
 
 // });
+
+// Mobile navigation Bar
+let menu = document.querySelector(".menu-bar");
+let nav = document.querySelector(".nav-items");
+
+menu.addEventListener("click", () =>{
+    nav.classList.toggle("nav-active");
+})
