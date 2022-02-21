@@ -21,7 +21,16 @@
   font-family: "Future-Med";
   src: url("/assets/Fonts/Inter-Medium.woff2") format("woff2");
 }
+.socials i {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+}
 
+.socials i:hover {
+  color: #f36c25;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 * {
   font-family: "Future-regular";
   box-sizing: border-box;
@@ -1382,7 +1391,18 @@ nav ul li a:hover {
   position: absolute;
   top: 71vh;
   left: 10vh;
+  animation: bounce 0.5s infinite alternate;
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
 }
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
 
 .bg-envision {
   font-family: "Future-Bold";
