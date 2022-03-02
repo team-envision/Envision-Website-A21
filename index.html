@@ -14,12 +14,12 @@
   </head>
 
   <body>
+
     <a id="home"></a>
-    <div class="container">
-      <div class="logo"><img src="./assets/images/introImg4.png" alt="" /></div>
-      <div class="toggle"><i class="fas fa-bars"></i></div>
-      <nav>
-        <ul>
+    <header>
+      <div class="logo"><img src="./assets/images/introImg4.png" alt="Envision Logo" /></div>
+      <div class="menu-bar"><i class="fas fa-bars"></i></div>
+        <ul class="nav-items">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#division">Divisions</a></li>
@@ -27,8 +27,7 @@
           <li><a href="/team.html">Team</a></li>
           <li><a href="#footer">Contact Us</a></li>
         </ul>
-      </nav>
-    </div>
+    </header>
 
     <div class="container3" id="main-container">
       <a name="home"></a>
@@ -50,15 +49,16 @@
           <img class="intro-logo" src="./assets/images/introImg1.png" alt="" />
         </div>
       </div>
-      <img src="./assets/images/Group 72.png" class="arrow" />
+      <a href="#arrow-dest">
+      <img src="./assets/images/Group 72.png" class="arrow" /></a>
     </div>
 
     <section id="about" class="about hidden">
       <div class="about_main">
-        <img src="./assets/images/head.png" alt="" class="about_top_left" />
+        <img src="./assets/images/head.png" alt="" class="about_top_left" id="arrow-dest"/>
         <div class="division-container">
           <div class="divisions-header">
-            <div class="divisions-title">About us</div>
+            <div class="divisions-title" >About us</div>
             <div class="divisions-bg">About us</div>
             <div class="divisions-orange-line"></div>
             <div class="divisions-subtitle">
@@ -76,6 +76,7 @@
               src="./assets/images/cherry-348 1.png"
               alt=""
               class="about_brain"
+              
             />
             <p class="about_text">
               Team Envision is a Multidisciplinary technical team of Aaruush
