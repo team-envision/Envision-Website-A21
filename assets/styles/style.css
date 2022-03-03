@@ -90,6 +90,8 @@ a {
   text-decoration: none;
 }
 
+/* Styles */
+
 .choose-us-div {
   max-width: 100vw;
   margin-right: 10px;
@@ -299,21 +301,38 @@ a {
 }
 
 /* Nav bar */
+/* Header */
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
 
+
+.scroll-up header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.menu-is-open {
+  overflow: hidden;
+
+}
+
+.menu-is-open header {
+  filter: none;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height:100px;
+  height: 100px;
   width: 100%;
   background: #f2f2f2;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
 }
 
 header .nav-items {
@@ -349,33 +368,57 @@ header .nav-items li:hover a {
 }
 
 @media (max-width: 900px) {
-  .menu-bar{
-    display:inline-block;
+  .scroll-down header {
+    transform: initial;
   }
-  .menu-bar i{
-    font-size:16px;
+
+  .scroll-up header {
+    box-shadow: initial;
+
   }
-  header .logo, header .menu-bar{
-    padding:15px;
+
+  .menu-is-open {
+    overflow: initial;
+
   }
-  header{
-    padding:0;
+
+  .menu-is-open header {
+    filter: initial;
+  }
+
+  .menu-bar {
+    display: inline-block;
+  }
+
+  .menu-bar i {
+    font-size: 16px;
+  }
+
+  header .logo,
+  header .menu-bar {
+    padding: 15px;
+  }
+
+  header {
+    padding: 0;
     transition: all 0.4s ease-in-out;
 
   }
-  header .nav-items{
-    display:flex;
-    position:fixed;
-    flex-direction:column;
-    top:100px;
-    width:100%;
-    height:100%;
+
+  header .nav-items {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 100px;
+    width: 100%;
+    height: 100%;
     justify-content: space-evenly;
-    background:#f2f2f2;
+    background: #f2f2f2;
     transform: translateX(100%);
     transition: all 0.4s ease-in-out;
   }
-  header .nav-active{
+
+  header .nav-active {
     transform: translateX(0%);
   }
 
