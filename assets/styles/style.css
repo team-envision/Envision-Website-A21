@@ -539,7 +539,7 @@ header .nav-items li:hover a {
 
 .main-card {
   display: flex;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   margin: 30px;
   align-items: center;
@@ -575,7 +575,7 @@ header .nav-items li:hover a {
 }
 
 .main-card .card-content {
-  width: 70%;
+  width: 90%;
 }
 
 .main-card .card-content h3 {
