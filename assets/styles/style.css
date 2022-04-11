@@ -657,7 +657,16 @@ header .nav-items li:hover a {
   }
 
   .main-card {
-    margin-top: 10px;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: space-between;
+  }
+  .main-card h3{
+    text-align: center;
+  }
+  .main-card .card-img{
+    margin:0;
+    margin-bottom: 10px;
   }
 
   .colab-heading {
