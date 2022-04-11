@@ -814,7 +814,7 @@ header .nav-items li:hover a {
 .divisions-title {
   font-family: "Future-Semi";
   position: relative;
-  left: 6%;
+  margin-left: 6%;
   font-style: normal;
   font-size: 2rem;
   font-weight: bolder;
@@ -828,7 +828,7 @@ header .nav-items li:hover a {
 .divisions-bg {
   font-family: "Future-regular";
   position: relative;
-  left: 6.5%;
+  margin-left: 6.5%;
   font-size: 4.5rem;
   /* transform: translate(1rem, -3.9rem); */
   z-index: 50;
