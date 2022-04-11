@@ -862,17 +862,14 @@ header .nav-items li:hover a {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 0rem;
-  flex: 50%;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 .divisions-body-1 {
-  max-width: 50vw;
+  width: 40%;
 }
 
 .divisions-body-2 {
-  min-width: 30vw;
+  width:60%;
 }
 
 .divisions-macbook {
@@ -943,6 +940,10 @@ header .nav-items li:hover a {
   .divisions-body-1 {
     display: none;
   }
+
+.divisions-body-2 {
+  width:100%;
+}
 
   #divisions {
     margin-top: 10vh;
@@ -1375,21 +1376,19 @@ header .nav-items li:hover a {
 
 .d_card_container {
   display: flex;
-  flex-flow: row wrap;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .d_card {
-  position: relative;
+  width:100%;
+  max-width:250px;
   border: 2px solid black;
-  width: 14rem;
-  height: 18rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1em 1em 1.5em 1em;
+  padding: 1rem;
   border-radius: 25px;
   background: #ffffff;
   border: 2px solid rgba(243, 108, 37, 0.22);
@@ -1403,19 +1402,18 @@ header .nav-items li:hover a {
 .d_card_img {
   background-color: #fff;
   box-shadow: 0px 0px 6px 2px #f36c25;
-  width: 50%;
-  height: 40%;
-  margin: auto;
-  border-radius: 50%;
   transition: 0.3s ease-in-out;
+  border-radius:50%;
+  height:110px;
+  width:110px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.d_card_img img{
+  width:100%;
 }
 
-.d_card_img>img {
-  padding: 10px;
-  height: 100%;
-  border-radius: 50%;
-  max-width: 100%;
-}
 
 .d_card-body {
   padding: 2em 1em;
@@ -1466,9 +1464,8 @@ header .nav-items li:hover a {
 
 @media (max-width: 900px) {
   .d_card {
-    width: 170px;
-    height: 250px;
     display: flex;
+    width:220px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1476,23 +1473,22 @@ header .nav-items li:hover a {
     border-radius: 25px;
     background: #ffffff;
     border: 2px solid rgba(243, 108, 37, 0.22);
-    margin: 1em;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin:5px;
   }
-
+  .d_card_img {
+    height:80px;
+    width:80px;
+  }
   .d_card_desc {
     font-size: 12px;
   }
-
-  .d_card_img {
-    background-color: #fff;
-    box-shadow: 0px 0px 6px 2px #f36c25;
-    width: 60%;
-    height: 80%;
-    margin: auto;
-    border-radius: 100%;
+}
+@media (max-width: 600px) {
+  .d_card {
+    width:90%;
+    width:190px;
   }
+  
 }
 
 
@@ -1642,6 +1638,7 @@ header .nav-items li:hover a {
   display: flex;
   padding: 5% 0%;
 }
+
 
 @media screen and (max-width: 900px) {
   .aboutimg {
