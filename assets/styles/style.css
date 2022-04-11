@@ -575,7 +575,7 @@ header .nav-items li:hover a {
 }
 
 .main-card .card-content {
-  width: 90%;
+  width: 100%;
 }
 
 .main-card .card-content h3 {
@@ -702,7 +702,7 @@ header .nav-items li:hover a {
   }
 
   .main-card .card-content p {
-    width: 80%;
+    width: 100%;
   }
 
   .main-card .card-content h3 {
