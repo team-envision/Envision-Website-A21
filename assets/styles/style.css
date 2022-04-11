@@ -657,7 +657,7 @@ header .nav-items li:hover a {
   }
 
   .main-card {
-    margin: 0;
+    margin-top: 10px;
   }
 
   .colab-heading {
@@ -943,6 +943,9 @@ header .nav-items li:hover a {
 
 .divisions-body-2 {
   width:100%;
+}
+.d_card_container{
+  margin-top: 20px;
 }
 
   #divisions {
