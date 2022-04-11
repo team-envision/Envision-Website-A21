@@ -903,15 +903,17 @@ header .nav-items li:hover a {
 @media (max-width: 900px) {
   .divisions-bg {
     font-size: calc(2px + 6.5vw);
-    margin-left: 1rem;
     transform: translate(1vw, -6.5vh);
     opacity: 0.15;
     max-width: 350px;
+    margin-left:28%;
   }
 
   .divisions-title {
     font-size: calc(10px + 5vw);
     max-width: 350px;
+    margin-left:31%;
+
   }
 
   .divisions-subtitle {
