@@ -113,6 +113,15 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 }
+.organizer_cards{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+}
+.organizer_cards .card{
+  margin-inline:30px;
+}
 
 .quote {
   color: #f6862c;
